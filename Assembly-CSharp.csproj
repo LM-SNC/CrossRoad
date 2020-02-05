@@ -58,8 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\DefualtMapSpawn.cs" />
-     <Compile Include="Assets\scripts\ScriptForRoad.cs" />
+     <Compile Include="Assets\scripts\Cars\MainCar.cs" />
+     <Compile Include="Assets\scripts\Road\DefualtMapSpawn.cs" />
+     <Compile Include="Assets\scripts\Road\ScriptForRoad.cs" />
      <None Include="Assets\Racing Cars\Skybox\readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>P:/unity/CrossRoad/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -12,8 +12,13 @@
           </e>
         </e>
         <e p="scripts" t="Include">
-          <e p="DefualtMapSpawn.cs" t="Include" />
-          <e p="ScriptForRoad.cs" t="Include" />
+          <e p="Cars" t="Include">
+            <e p="MainCar.cs" t="Include" />
+          </e>
+          <e p="Road" t="Include">
+            <e p="DefualtMapSpawn.cs" t="Include" />
+            <e p="ScriptForRoad.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="CrossRoad.sln" t="IncludeFlat" />
