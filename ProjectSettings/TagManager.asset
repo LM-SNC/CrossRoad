@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Right
   - Left
+  - Enemy
+  - MOOV
+  - CR
   layers:
   - Default
   - TransparentFX

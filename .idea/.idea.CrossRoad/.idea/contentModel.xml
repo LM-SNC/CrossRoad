@@ -13,6 +13,8 @@
         </e>
         <e p="scripts" t="Include">
           <e p="Cars" t="Include">
+            <e p="EnemyMoover.cs" t="Include" />
+            <e p="EnemyRight.cs" t="Include" />
             <e p="MainCar.cs" t="Include" />
           </e>
           <e p="Road" t="Include">

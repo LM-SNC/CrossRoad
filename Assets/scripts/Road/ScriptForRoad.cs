@@ -38,7 +38,7 @@ public bool numbertwo;
 
     IEnumerator spawnmap()
     {
-        yield return new WaitForSeconds(Random.Range(10,30));
+        yield return new WaitForSeconds(Random.Range(1,3));
         Debug.Log("spawnmap():ScriptForRoad");
         numbertwo = true;
         

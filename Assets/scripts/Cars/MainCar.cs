@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,8 +37,22 @@ public class MainCar : MonoBehaviour
             speedup += 0.02f;
         }
         //moove
-    }
-  
 
-        
+        if (transform.position.y < -4f)
+        {
+            transform.position = new Vector3(transform.position.x, -4f, 0);
+        }
+        if (transform.position.y > 4f)
+        {
+            transform.position = new Vector3(transform.position.x, 4f, 0);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
