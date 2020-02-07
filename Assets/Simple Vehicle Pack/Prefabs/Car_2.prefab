@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &954196186920452574
+--- !u!1 &1777975180931052982
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4691640496383602921}
-  - component: {fileID: 8247217284785933325}
+  - component: {fileID: 2213219727696790960}
+  - component: {fileID: 4758068340916876928}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: MOOV
@@ -17,33 +17,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4691640496383602921
+--- !u!4 &2213219727696790960
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954196186920452574}
+  m_GameObject: {fileID: 1777975180931052982}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.92722315, y: 0.31900004, z: -0.37100005}
+  m_LocalPosition: {x: 0.92722315, y: 0.3193242, z: -1.1995288}
   m_LocalScale: {x: 1.4285713, y: 1.4285711, z: 1.4285711}
   m_Children: []
   m_Father: {fileID: 5584418542707200885}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8247217284785933325
+--- !u!65 &4758068340916876928
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954196186920452574}
+  m_GameObject: {fileID: 1777975180931052982}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.41490376, y: 1.407565, z: 1}
-  m_Center: {x: -0.6373401, y: -0.69494957, z: 0.000000029802326}
+  m_Size: {x: 0.41490382, y: 3.2204905, z: 1}
+  m_Center: {x: -0.6373401, y: -1.6014123, z: 0.000000029802326}
 --- !u!1 &2339780390492404851
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ Transform:
   - {fileID: 6665666314585885288}
   - {fileID: 1275293090154974315}
   - {fileID: 1280032018235209437}
-  - {fileID: 4691640496383602921}
+  - {fileID: 2213219727696790960}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -108,10 +108,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cdf2833aae3c3429e0c8a722fb2a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2.6
   speedmoove: 0.5
   right: 0
   left: 0
+  x: 0
+  y: 0
+  z: 0
 --- !u!54 &3457190584580330871
 Rigidbody:
   m_ObjectHideFlags: 0

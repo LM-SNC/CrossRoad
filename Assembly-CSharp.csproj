@@ -61,7 +61,10 @@
      <Compile Include="Assets\scripts\Cars\EnemyMoover.cs" />
      <Compile Include="Assets\scripts\Cars\EnemyRight.cs" />
      <Compile Include="Assets\scripts\Cars\MainCar.cs" />
+     <Compile Include="Assets\scripts\Cars\SpawnMainCar.cs" />
+     <Compile Include="Assets\scripts\DontSpawnCar.cs" />
      <Compile Include="Assets\scripts\Road\DefualtMapSpawn.cs" />
+     <Compile Include="Assets\scripts\Road\DestroyRoad.cs" />
      <Compile Include="Assets\scripts\Road\ScriptForRoad.cs" />
      <None Include="Assets\Racing Cars\Skybox\readme.txt" />
  <Reference Include="Unity.Timeline.Editor">

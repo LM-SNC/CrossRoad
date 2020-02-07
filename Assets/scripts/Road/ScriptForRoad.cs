@@ -19,7 +19,7 @@ public bool numbertwo;
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * speed * Time.deltaTime);
+        //transform.Translate(Vector3.down * speed * Time.deltaTime);
         if (transform.position.y < -12)
         {
             if (!numbertwo)

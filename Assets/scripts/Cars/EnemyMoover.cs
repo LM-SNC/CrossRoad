@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyMoover : MonoBehaviour
 {
+    public GameObject Player;
     public float speed = 2;
     public float speedmoove = 1f;
-
     public bool right;
+    public bool speeddown;
     public bool left;
     // Start is called before the first frame update
 
@@ -18,33 +20,31 @@ public class EnemyMoover : MonoBehaviour
     public float z;
     public void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Right"))
+        if (other.gameObject.CompareTag("MOOV"))
         {
+            
+            if (speed > 1)
+            {
+                speed -= 0.3f;
+            }
 
+            StartCoroutine(CheckSpeed());
         }
     }
 
+    private void Start()
+    {
+     
+
+        
+    }
 
 
     public void OnTriggerEnter(Collider other)
     {
 
 
-        if (other.gameObject.CompareTag("MOOV"))
-        {
-     
-                if (transform.position.x < 2 && transform.position.x > 1.3f)
-                {
-                    left = true;
-                   
-                }
 
-                if (transform.position.x > -0.01f && transform.position.x < 1.3f)
-                {
-                    right = true;
-                }
-                
-        }
 
 
 
@@ -53,6 +53,12 @@ public class EnemyMoover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Player = MainCar.inst;
+        if (Player.transform.position.y > transform.position.y + 15)
+        {
+            Debug.Log("CheckPosY:Destroy");
+            Destroy(gameObject);
+        } 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
         if (right && transform.position.x < 2)
@@ -72,10 +78,20 @@ public class EnemyMoover : MonoBehaviour
             }
         }
 
-        if (transform.position.y > 8f)
-        {
-            Destroy(gameObject);
-        }
+     //   if (transform.position.y > 8f)
+      //  {
+      //      Destroy(gameObject);
+      //  }
     }
+    IEnumerator CheckSpeed()
+    {
+        yield return new WaitForSeconds(Random.Range(7,10));
+        if (speed < 2 && !speeddown)
+        {
+            speed += 0.01f;
+        }
 
+        
+
+    }
 }

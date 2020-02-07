@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2955927362197793366}
   - component: {fileID: 6985807687443651483}
-  - component: {fileID: 5352446337443548177}
+  - component: {fileID: -2150027170465769710}
   m_Layer: 0
   m_Name: defualtRoad
   m_TagString: Untagged
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5352446337443548177
+--- !u!114 &-2150027170465769710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,8 +91,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4705843984763253773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6ea7782aabb6fe42a5470e1d17c15f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 208e34a2300948248be1c6f9b8775efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  road: {fileID: 4705843984763253773}
-  speed: 1.8

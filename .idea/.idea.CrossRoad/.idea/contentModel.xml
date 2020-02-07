@@ -16,9 +16,12 @@
             <e p="EnemyMoover.cs" t="Include" />
             <e p="EnemyRight.cs" t="Include" />
             <e p="MainCar.cs" t="Include" />
+            <e p="SpawnMainCar.cs" t="Include" />
           </e>
+          <e p="DontSpawnCar.cs" t="Include" />
           <e p="Road" t="Include">
             <e p="DefualtMapSpawn.cs" t="Include" />
+            <e p="DestroyRoad.cs" t="Include" />
             <e p="ScriptForRoad.cs" t="Include" />
           </e>
         </e>

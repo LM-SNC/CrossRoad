@@ -54,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5632645804899803513}
   - component: {fileID: 290925538168707435}
-  - component: {fileID: 6481482740516197912}
   m_Layer: 0
   m_Name: RoadNumbertTwo Variant
   m_TagString: Untagged
@@ -127,17 +126,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6481482740516197912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5057286979343352637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6ea7782aabb6fe42a5470e1d17c15f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  road: {fileID: 4705843984763253773, guid: 6ca961ad27c644e42b43c6fbe22a49df, type: 3}
-  speed: 1.8
