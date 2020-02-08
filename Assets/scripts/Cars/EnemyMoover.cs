@@ -14,10 +14,7 @@ public class EnemyMoover : MonoBehaviour
     public bool speeddown;
     public bool left;
     // Start is called before the first frame update
-
-    public float x;
-    public float y;
-    public float z;
+    
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("MOOV"))
@@ -35,7 +32,7 @@ public class EnemyMoover : MonoBehaviour
     private void Start()
     {
      
-
+        Player = MainCar.inst;
         
     }
 
@@ -53,7 +50,7 @@ public class EnemyMoover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Player = MainCar.inst;
+        
         if (Player.transform.position.y > transform.position.y + 15)
         {
             Debug.Log("CheckPosY:Destroy");
@@ -61,7 +58,7 @@ public class EnemyMoover : MonoBehaviour
         } 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        if (right && transform.position.x < 2)
+      /*  if (right && transform.position.x < 2)
         {
             transform.Translate(Vector3.right * speedmoove * Time.deltaTime);
             if (transform.position.x >= 2)
@@ -77,6 +74,7 @@ public class EnemyMoover : MonoBehaviour
                 left = false;
             }
         }
+        */
 
      //   if (transform.position.y > 8f)
       //  {

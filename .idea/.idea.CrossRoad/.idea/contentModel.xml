@@ -18,7 +18,16 @@
             <e p="MainCar.cs" t="Include" />
             <e p="SpawnMainCar.cs" t="Include" />
           </e>
-          <e p="DontSpawnCar.cs" t="Include" />
+          <e p="DSpawnFIRST.cs" t="Include" />
+          <e p="DSpawnFOURTH.cs" t="Include" />
+          <e p="DSpawnSECOND.cs" t="Include" />
+          <e p="DSpawnthirt.cs" t="Include" />
+          <e p="New Folder" t="Include">
+            <e p="DSPFIRST.cs" t="Include" />
+            <e p="DSPFOURTH.cs" t="Include" />
+            <e p="DSPSECOND.cs" t="Include" />
+            <e p="DSPTHIRD.cs" t="Include" />
+          </e>
           <e p="Road" t="Include">
             <e p="DefualtMapSpawn.cs" t="Include" />
             <e p="DestroyRoad.cs" t="Include" />
